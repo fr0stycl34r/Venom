@@ -60,6 +60,12 @@ make
 sudo make install
 ```
 
+*Note:If Cmake doesn't work, or if you get errors about missing libraries, run:* ```export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig cmake .. -DCMAKE_INSTALL_PREFIX=/usr/```
+
+*(You can add that to your .zshrc or .bashrc if you need to)*
+
+*If it still doesn't work, make sure you have installed toxcore.*
+
 <a name="osx" />
 ###OS X:
 
@@ -76,6 +82,7 @@ cmake ..
 make
 sudo make install
 ```
+
 <a name="windows" />
 ###Windows:
 
