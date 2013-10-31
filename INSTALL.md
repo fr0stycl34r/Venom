@@ -59,7 +59,10 @@ cmake ..
 make
 sudo make install
 ```
-
+If cmake doesn't work, or if you get an error about missing Libs, run
+```
+PKG_CONFIG_PATH=/usr/local/lib/pkgconfig cmake .. -DCMAKE_INSTALL_PREFIX=/usr/
+```
 <a name="osx" />
 ###OS X:
 
